@@ -61,6 +61,9 @@ const reverseArray = (arr)=>{
     for(let i=firstLength;i>=0;i--){
        arr.push(arr[i]);
     }
+    for (let i=0;i<=firstLength;i++){
+        arr.shift();
+     }
     return arr;
 }
 // -------------------------------------------------------------------------------------------------------
