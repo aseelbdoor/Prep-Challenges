@@ -109,7 +109,6 @@ const roundDecimals = (arr) => {
 //     }
 // ]
 //
-
 const employeesBonus = (arr) => {
     let result=new Array();
     arr.forEach(element => {
