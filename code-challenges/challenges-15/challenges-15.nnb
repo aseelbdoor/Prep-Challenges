@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function equalizeArray(arr) {\n    let n=arr.length;\n  let freq = new Map();\n    for(let i = 0; i <n ; i++){\n        if(freq.has(arr[i])){\n            freq.set(arr[i], freq.get(arr[i]) + 1)\n        }else{\n            freq.set(arr[i], 1)\n        }\n    }\n     let max_freq = Number.MIN_SAFE_INTEGER;\n    for(let entry of freq)\n        max_freq = Math.max(max_freq, entry[1]);\n     return n - max_freq ;\n}\n\n\n// The code above is from the internet, and this code is mine. I think I did not understand the idea well. It failed in some test\n// function equalizeArray(arr) {\n//     let dap=[];\n//       for(let i=0;i<arr.length;i++){\n//           let counter=0;\n//           let element=arr[i];\n//           if(arr.indexOf(element)!==arr.lastIndexOf(element)){\n//               arr.forEach((x)=>{\n//                   if (element!==x){\n//                       counter++;\n//                   }\n//               })\n//           }\n//           dap.push(counter);\n//       }\n//       function miin(arr){\n//     let min =Math.min(...arr);\n//     while(min<2){\n//       arr.pop(min);\n//       min =Math.min(...arr);\n//       if (min>=2){\n//         break;\n//       }\n//     }\n//     return min;\n//   }\n//       return miin(dap);\n//   }"
             ],
             "outputs": []
         },
