@@ -45,7 +45,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "let value = Math.ceil(Math.sqrt([...s].length));\n\n    return [...s].reduce((target, item, index) => {\n      target[index % value] += item;\n\n      return target;\n    }, new Array(value).fill(\"\")).join(\" \");"
             ],
             "outputs": []
         },
@@ -59,7 +59,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "let nums = [ \"zero\", \"one\", \"two\", \"three\", \"four\",\n                            \"five\", \"six\", \"seven\", \"eight\", \"nine\",\n                            \"ten\", \"eleven\", \"twelve\", \"thirteen\",\n                            \"fourteen\", \"fifteen\", \"sixteen\", \"seventeen\",\n                            \"eighteen\", \"nineteen\", \"twenty\", \"twenty one\",\n                            \"twenty two\", \"twenty three\", \"twenty four\",\n                            \"twenty five\", \"twenty six\", \"twenty seven\",\n                            \"twenty eight\", \"twenty nine\",\n                        ];\n        if (m == 0)\n            return nums[h] + \" o' clock \";\n        \n        else if (m == 1)\n            return \"one minute past \" + nums[h] ;\n        \n        else if (m == 59)\n            return \"one minute to \" +nums[(h % 12) + 1];\n        \n        else if (m == 15)\n            return \"quarter past \" + nums[h] ;\n        \n        else if (m == 30)\n            return \"half past \" + nums[h] ;\n        \n        else if (m == 45)\n            return \"quarter to \" + nums[(h % 12) + 1] ;\n        \n        else if (m <= 30)\n            return nums[m] + \" minutes past \" + nums[h] ;\n        \n        else if (m > 30)\n            return nums[60 - m] + \" minutes to \" + nums[(h % 12) + 1] ;"
             ],
             "outputs": []
         }
